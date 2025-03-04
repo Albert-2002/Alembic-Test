@@ -1,7 +1,6 @@
 from sqlalchemy.orm import Session
 from sqlalchemy import select
 from .models import Student
-from .schemas import StudentResponse
 
 def get_all_students(db: Session):
     result = db.execute(select(Student.name))

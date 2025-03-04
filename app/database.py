@@ -1,5 +1,5 @@
 from sqlalchemy import create_engine
-from sqlalchemy.orm import sessionmaker
+from sqlalchemy.orm import sessionmaker, declarative_base
 import os
 from dotenv import load_dotenv
 
@@ -13,6 +13,9 @@ engine = create_engine(DATABASE_URL, echo=True)
 
 # Session maker
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
+
+# Define Base for models
+Base = declarative_base()
 
 # Dependency to get the database session
 def get_db():
