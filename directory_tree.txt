@@ -1,0 +1,13 @@
+├── .env
+├── .gitignore
+├── app
+│   ├── crud.py
+│   ├── database.py
+│   ├── main.py
+│   ├── models.py
+│   └── schemas.py
+├── create_insert.sql
+├── directory_tree.txt
+├── generate_project_tree.py
+├── README.md
+└── requirements.txt
