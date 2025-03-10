@@ -1,12 +1,20 @@
 ├── .env
 ├── .gitignore
+├── alembic
+│   ├── env.py
+│   ├── README
+│   ├── script.py.mako
+│   └── versions
+│       ├── 078ee96ad015_autogenerating_initial_migration.py
+│       ├── 07beeaa38e47_added_roll_no.py
+│       └── 0f4f0b01732d_added_email_column.py
+├── alembic.ini
 ├── app
 │   ├── crud.py
 │   ├── database.py
 │   ├── main.py
 │   ├── models.py
 │   └── schemas.py
-├── create_insert.sql
 ├── directory_tree.txt
 ├── generate_project_tree.py
 ├── README.md
